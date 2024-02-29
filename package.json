@@ -1,0 +1,52 @@
+{
+  "name": "miniture",
+  "version": "1.0.0",
+  "description": "проект-портфолио miniture",
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './src/**/*.{pug,html,scss,css,js}'",
+    "format": "prettier --write './src/**/*.{pug,html,scss,css,js}'",
+    "lint": "stylelint './src/**/*.{scss,css}'",
+    "lintfix": "stylelint './src/**/*.{scss,css}' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nigilen/miniture.git"
+  },
+  "author": "Nick Yuskov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nigilen/miniture/issues"
+  },
+  "homepage": "https://github.com/Nigilen/miniture#readme",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^6.0.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.35",
+    "postcss-combine-media-query": "^1.0.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "stylelint-config-standard-scss": "^13.0.0"
+  },
+  "dependencies": {
+    "stylelint": "^16.2.1"
+  }
+}
